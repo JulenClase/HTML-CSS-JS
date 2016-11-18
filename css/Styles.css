@@ -115,3 +115,28 @@ footer{
 }
 .clearfix:before, .clearfix:after {content: ""; display: table}
 .clearfix:after {clear:both;}
+@media (min-width: 320px) {
+    nav#nav-web{
+        display: none;
+    }
+}
+@media (min-width: 544px) {
+    nav#nav-web{
+        display: none;
+    }
+}
+@media (min-width: 768px) {
+    nav#nav-web{
+        display: none;
+    }
+}
+@media (min-width: 992px) {
+    nav#nav-web{
+        display: block;
+    }
+}
+@media (min-width: 1200px) {
+    nav#nav-web{
+        display: block;
+    }
+}
