@@ -113,6 +113,35 @@ img{
 footer{
     padding-top: 20px;
 }
+footer li a{
+    float: right;
+    width: 48px;
+    height: 48px;
+    display: block;
+    background: url(../img/sprites-social.png) #010101 no-repeat;
+
+}
+.imgTwitter a{
+    background-position: 0px 0;
+}
+.imgTwitter:hover a{
+    background-position: 0px -48px;
+}
+.imgFacebook a{
+     background-position: -48px 0;
+ }
+.imgFacebook:hover  a{
+    background-position: -48px -48px;
+}
+.imgLinkedin a{
+    background-position: calc(48px * 3 *9) 0;
+}
+.imgLinkedin:hover a{
+    background-position: -144px -48px;
+}
+
+
+
 .clearfix:before, .clearfix:after {content: ""; display: table}
 .clearfix:after {clear:both;}
 @media (min-width: 320px) {
