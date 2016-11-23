@@ -46,7 +46,84 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
+/*KEYFRAMES*/
+@-moz-keyframes slider { /*FF 13 -16 */
+    0%{ left: 0%;}
+    20%{ left: 0%;}
+    25%{ left: -100%;}
+    45%{ left: -100%;}
+    50%{ left: -200%;}
+    70%{ left: -200%;}
+    75%{ left: -300%;}
+    95%{ left: -300%;}
+    100%{ left: -400%;}
+}
+@-webkit-keyframes slider {
+    0%{ left: 0%;}
+    20%{ left: 0%;}
+    25%{ left: -100%;}
+    45%{ left: -100%;}
+    50%{ left: -200%;}
+    70%{ left: -200%;}
+    75%{ left: -300%;}
+    95%{ left: -300%;}
+    100%{ left: -400%;}
+}
+@-ms-keyframes slider {
+    0%{ left: 0%;}
+    20%{ left: 0%;}
+    25%{ left: -100%;}
+    45%{ left: -100%;}
+    50%{ left: -200%;}
+    70%{ left: -200%;}
+    75%{ left: -300%;}
+    95%{ left: -300%;}
+    100%{ left: -400%;}
+}
+@-khtml-keyframes slider {
+    0%{ left: 0%;}
+    20%{ left: 0%;}
+    25%{ left: -100%;}
+    45%{ left: -100%;}
+    50%{ left: -200%;}
+    70%{ left: -200%;}
+    75%{ left: -300%;}
+    95%{ left: -300%;}
+    100%{ left: -400%;}
+}
+@-o-keyframes slider {
+    0%{ left: 0%;}
+    20%{ left: 0%;}
+    25%{ left: -100%;}
+    45%{ left: -100%;}
+    50%{ left: -200%;}
+    70%{ left: -200%;}
+    75%{ left: -300%;}
+    95%{ left: -300%;}
+    100%{ left: -400%;}
+}
+@keyframes slider { /* W3C starndard*/
+    0%{ left: 0%;}
+    20%{ left: 0%;}
+    25%{ left: -100%;}
+    45%{ left: -100%;}
+    50%{ left: -200%;}
+    70%{ left: -200%;}
+    75%{ left: -300%;}
+    95%{ left: -300%;}
+    100%{ left: -400%;}
+}
+@keyframes slider { /* W3C starndard*/
+    0%{ left: 0%;}
+    20%{ left: 0%;}
+    25%{ left: -100%;}
+    45%{ left: -100%;}
+    50%{ left: -200%;}
+    70%{ left: -200%;}
+    75%{ left: -300%;}
+    95%{ left: -300%;}
+    100%{ left: -400%;}
+}
 /* INICIO DE CSS PROPIO/CLASE*/
 
 *{
@@ -72,7 +149,7 @@ h3{
 
 }
 #wrapper > header{
-    width: 20%;
+    width: 10%;
     margin: 0 auto;
 }
 div > nav{
@@ -100,10 +177,11 @@ nav ul li:hover{
 nav ul li a{
     text-decoration: none;
 }
+
 section{
     padding: 30px;
 }
-img{
+section img{
     float: left;
     width: 500px;
     height: 300px;
@@ -134,14 +212,113 @@ footer li a{
     background-position: -48px -48px;
 }
 .imgLinkedin a{
-    background-position: calc(48px * 3 *9) 0;
+    background-position: -144px 0;
 }
 .imgLinkedin:hover a{
     background-position: -144px -48px;
 }
 
+/*SLIDER HTML5+CSS*/
+/*
+div#GaleriaSlider{
+    overflow: hidden;
+    width: 50%;
+    margin: 0 auto;
+}
+figure.slider{
+    position: relative;
+    width: calc(100%*5);
+    font-size: 0%;
+    padding: 0;
+    animation: 15s sliderr infinite;
+}
+figure.slider figure{
+    width:  calc(100%/5);
+    height: auto;
+    display: inline-block;
+    position: inherit;
+
+}
+figure.slider img{
+
+    c
+    border-radius: 0%;
+}
+/* //Para poner titulo visible abajo//
+figure.slider figure figcaption{
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+    color: aquamarine;
+    width: 100%;
+    font-size: 2rem;
+    padding: .6rem;
+}*/
+@-webkit-keyframes anim_slides {
+    0% {opacity:0;}
+    6% {opacity:1;}
+    24% {opacity:1;}
+    30% {opacity:0;}
+    100% {opacity:0;}
+}
+
+@-moz-keyframes anim_slides {
+    0% {opacity:0;}
+    6% {opacity:1;}
+    24% {opacity:1;}
+    30% {opacity:0;}
+    100% {opacity:0;}
+}
 
 
+div#GaleriaSlider{
+    position: relative;
+    width: 50%;
+    height: 300px;
+    margin: 0 auto;
+}
+.slider figure{
+    opacity: 0;
+    position: absolute;
+    -webkit-animation-name: anim_slides;
+    -webkit-animation-duration: 30.0s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-name: anim_slides;
+    -moz-animation-duration: 30.0s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: normal;
+    -moz-animation-delay: 0s;
+    -moz-animation-play-state: running;
+    -moz-animation-fill-mode: forwards;
+}
+
+.slider figure:nth-child(2), .slider figure:nth-child(2) img{
+    -webkit-animation-delay: 6.0s;
+    -moz-animation-delay: 6.0s;
+}
+.slider figure:nth-child(3), .slider figure:nth-child(3) img{
+    -webkit-animation-delay: 12.0s;
+    -moz-animation-delay: 12.0s;
+}
+.slider figure:nth-child(4), .slider figure:nth-child(4) img{
+    -webkit-animation-delay: 18.0s;
+    -moz-animation-delay: 18.0s;
+}
+.slider figure:nth-child(5), .slider figure:nth-child(5) img{
+    -webkit-animation-delay: 24.0s;
+    -moz-animation-delay: 24.0s;
+}
+.slider figure img{
+    display: block;
+    width: 100%;
+    height: 300px;
+}
 .clearfix:before, .clearfix:after {content: ""; display: table}
 .clearfix:after {clear:both;}
 @media (min-width: 320px) {
