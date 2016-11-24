@@ -7,16 +7,23 @@
     <meta name="description" content="Tienda Ipartek">
     <!-- para que el ancho sea igual al del dispositivo y poder hacer zoom -->
     <meta name="viewport" content="with=device-width, initial.scale=1">
-    <link href="css/Styles.css" rel="stylesheet"/>
+    <!--<link href="css/Styles.css" rel="stylesheet"/>-->
+    <link href="css/flexstyles.css" rel="stylesheet"/>
     <title>Primera página (tienda)</title>
 </head>
 <body>
-    <div id="wrapper">
-        <header>
-            <h1>Tienda Ipartek</h1>
+    <div id="wrapper" class="container">
+        <header class="header">
+            <h1>
+                <svg width="200px" height="60px">
+                    <text id="texto" x="0" y="30" fill="blue">Tienda Ipartek</text>
+                    <circle id="circulo" cx="150" cy="25" r="10" stroke="black" stroke-width="2" fill="orange" />
+                    <animate xlink:href="#circulo" attributeName="cy" from="0" to="50" dur="1s" begin="click"
+                             values="0; 25; 50; 25; 0; 25; 50; 25" keyTimes="0; 0.15; 0.3; 0.45; 0.6; 0.75; 0.9; 1" repeatCount="indefinite"/>
+                </svg>
+            </h1>
         </header>
-        <nav id="nav-Responsive"></nav>
-        <nav id="nav-web">
+        <nav id="nav-web" class="navResponsive">
             <ul class="clearfix">
                 <li><a href="#presentacion"> Presentación</a></li>
                 <li><a href="#productos"> Productos</a></li>
