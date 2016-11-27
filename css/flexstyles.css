@@ -160,9 +160,127 @@ div#wrapper{
 .navResponsive{
     display: flex;
     background-color: beige;
+    justify-content: center;
+}
+.listaNav{
+    display: flex;
+}
+.listaNav li{
+
+    padding: 10px;
 
 }
-.navResponsive ul{
+@-webkit-keyframes anim_slides {
+    0% {opacity:0;}
+    6% {opacity:1;}
+    24% {opacity:1;}
+    30% {opacity:0;}
+    100% {opacity:0;}
+}
 
+@-moz-keyframes anim_slides {
+    0% {opacity:0;}
+    6% {opacity:1;}
+    24% {opacity:1;}
+    30% {opacity:0;}
+    100% {opacity:0;}
+}
+div#GaleriaSlider{
+    display: flex;
+    justify-content: center;
+    height: 300px;
+}
 
+.slider figure{
+    opacity: 0;
+    position: absolute;
+    -webkit-animation-name: anim_slides;
+    -webkit-animation-duration: 30.0s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-name: anim_slides;
+    -moz-animation-duration: 30.0s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: normal;
+    -moz-animation-delay: 0s;
+    -moz-animation-play-state: running;
+    -moz-animation-fill-mode: forwards;
+}
+
+.slider figure:nth-child(2), .slider figure:nth-child(2) img{
+    -webkit-animation-delay: 6.0s;
+    -moz-animation-delay: 6.0s;
+}
+.slider figure:nth-child(3), .slider figure:nth-child(3) img{
+    -webkit-animation-delay: 12.0s;
+    -moz-animation-delay: 12.0s;
+}
+.slider figure:nth-child(4), .slider figure:nth-child(4) img{
+    -webkit-animation-delay: 18.0s;
+    -moz-animation-delay: 18.0s;
+}
+.slider figure:nth-child(5), .slider figure:nth-child(5) img{
+    -webkit-animation-delay: 24.0s;
+    -moz-animation-delay: 24.0s;
+}
+.slider figure img{
+    height: 300px;
+}
+.mainclass{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+.mainclass section{
+    flex-wrap: wrap;
+    display: flex;
+    padding-top: 10px;
+}
+section > h2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding:10px;
+}
+section > img{
+    border-radius: 50%;
+    width: 50%;
+}
+section > p {
+    width: 50%;
+}
+footer{
+    padding-top: 20px;
+}
+footer li a{
+    float: right;
+    width: 48px;
+    height: 48px;
+    display: block;
+    background: url(../img/sprites-social.png) #010101 no-repeat;
+
+}
+.imgTwitter a{
+    background-position: 0px 0;
+}
+.imgTwitter:hover a{
+    background-position: 0px -48px;
+}
+.imgFacebook a{
+    background-position: -48px 0;
+}
+.imgFacebook:hover  a{
+    background-position: -48px -48px;
+}
+.imgLinkedin a{
+    background-position: -144px 0;
+}
+.imgLinkedin:hover a{
+    background-position: -144px -48px;
 }
