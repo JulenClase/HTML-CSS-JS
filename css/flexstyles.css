@@ -154,21 +154,41 @@ div#wrapper{
 
 .header{
     display: flex;
+    padding-top:35px ;
     justify-content: center;
 }
 
 .navResponsive{
     display: flex;
+    top:0;
+    left:0;
     background-color: beige;
     justify-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 .listaNav{
     display: flex;
+    justify-content: center;
 }
 .listaNav li{
-
     padding: 10px;
+}
+.listaNav li a{
+    text-decoration: none;
+}
+.listaNav li:hover{
+    border-radius: 5px 10px 15px 20px;
+    background-color: darkkhaki;
+}
 
+.tituloSVG {
+    fill: transparent;
+    stroke-dasharray: 176 266;
+    stroke-dashoffset: 212;
+    stroke-width: 8px;
+    stroke: #19f6e8;
 }
 @-webkit-keyframes anim_slides {
     0% {opacity:0;}
@@ -184,6 +204,22 @@ div#wrapper{
     24% {opacity:1;}
     30% {opacity:0;}
     100% {opacity:0;}
+}
+@keyframes draw {
+    0% {
+        stroke-dasharray: 140 540;
+        stroke-dashoffset: -252;
+        stroke-width: 8px;
+    }
+    100% {
+        stroke-dasharray: 760;
+        stroke-dashoffset: 0;
+        stroke-width: 2px;
+    }
+}
+.header:hover .tituloSVG{
+    -webkit-animation: 0.5s draw linear forwards;
+    animation: 0.5s draw linear forwards;
 }
 div#GaleriaSlider{
     display: flex;
@@ -233,36 +269,61 @@ div#GaleriaSlider{
 }
 .mainclass{
     display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 3%;
 }
 .mainclass section{
-    flex-wrap: wrap;
     display: flex;
-    padding-top: 10px;
+}
+.mainDiv{
+    display: flex;
+    justify-content: center;
 }
 section > h2{
     display: flex;
     justify-content: center;
-    width: 100%;
     padding:10px;
 }
-section > img{
+section div > img{
     border-radius: 50%;
-    width: 50%;
 }
 section > p {
-    width: 50%;
+    padding: 3%;
+}
+
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.productos section{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 32%;
+    padding: 10px;
+}
+.divProd img{
+    border-radius: 0%;
+    width: 300px;
+
 }
 footer{
+    display: flex;
+    justify-content: space-around;
     padding-top: 20px;
 }
+ul li{
+    display: inline-flex;
+
+}
 footer li a{
-    float: right;
+
     width: 48px;
     height: 48px;
-    display: block;
     background: url(../img/sprites-social.png) #010101 no-repeat;
 
 }
@@ -283,4 +344,76 @@ footer li a{
 }
 .imgLinkedin:hover a{
     background-position: -144px -48px;
+}
+
+@media (min-width: 320px) {
+    #wrapper{
+        width: 100%;
+    }
+    nav#nav-web{
+        display: none;
+    }
+    .productos {
+        flex-direction: column;
+
+    }
+    .productos section{
+        flex-direction: column;
+    }
+}
+@media (min-width: 544px) {
+    #wrapper{
+        width: 100%;
+    }
+    nav#nav-web{
+        display: none;
+    }
+    .productos{
+        flex-direction: column;
+
+    }
+    .productos section{
+        flex-direction: column;
+
+    }
+}
+@media (min-width: 768px) {
+    nav#nav-web{
+        display: none;
+    }
+    .productos {
+        flex-direction: row;
+
+    }
+    .productos section{
+        flex-direction: row;
+
+    }
+
+}
+@media (min-width: 992px) {
+    nav#nav-web{
+        display: block;
+    }
+    .productos {
+        flex-direction: row;
+
+    }
+    .productos section{
+        flex-direction: row;
+
+    }
+}
+@media (min-width: 1200px) {
+    nav#nav-web{
+        display: block;
+    }
+    .productos {
+        flex-direction: row;
+
+    }
+    .productos section{
+        flex-direction: row;
+
+    }
 }
