@@ -22,7 +22,6 @@
                         <animate xlink:href="#circulo" attributeName="cy" from="0" to="50" dur="1s"
                                  values="0; 25; 50; 25; 0; 25; 50; 25" keyTimes="0; 0.15; 0.3; 0.45; 0.6; 0.75; 0.9; 1" repeatCount="indefinite"/>
                         <rect class="tituloSVG" height="55px" width="175px"></rect>
-
                     </svg>
                 </h1>
             </header>
@@ -33,6 +32,15 @@
                     <li><a href="#acercade"> Acerca de</a></li>
                     <li><a href="#localizacion"> Localización</a></li>
                     <li><a href="#contacto"> Contacto</a></li>
+                </ul>
+            </nav>
+            <nav class="search">
+                <ul>
+                    <li>
+                        <form method="get" action="/search" id="search">
+                            <input name="q" type="text" size="40" placeholder="Search..." />
+                        </form>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -63,7 +71,7 @@
         <main class="mainclass">
             <section id="presentacion">
                 <div class="mainDiv">
-                    <h2>Presentación</h2>
+                    <header><h2>Presentación</h2></header>
                     <img class="mi1" src="img/paisajes-bonitos-de-otoño-lago.jpg" alt="Paisaje1">
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus purus ac auctor dictum. Nullam interdum eu tellus a efficitur. Sed a magna urna. Praesent sed faucibus quam. Pellentesque quis feugiat tellus. Vestibulum porta nulla id quam ultricies imperdiet. Sed maximus risus dui, vitae vehicula tellus commodo sed. Nulla vitae urna ac urna gravida iaculis at in nunc. Vivamus iaculis porttitor felis ac ultrices. Phasellus vitae arcu et velit semper sollicitudin.
@@ -72,37 +80,53 @@
             </section>
             <div class="productos">
                 <section id="productos" >
-                    <div class="divProd">
-                        <h2>Productos</h2>
-                        <img src="img/hobbiton-lake%20(1).jpg" alt="Paisaje2">
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus purus ac auctor dictum. Nullam interdum eu tellus a efficitur. Sed a magna urna. Praesent sed faucibus quam. Pellentesque quis feugiat tellus. Vestibulum porta nulla id quam ultricies imperdiet. Sed maximus risus dui, vitae vehicula tellus commodo sed. Nulla vitae urna ac urna gravida iaculis at in nunc. Vivamus iaculis porttitor felis ac ultrices. Phasellus vitae arcu et velit semper sollicitudin.
+                        <div class="divProd">
+                            <header><h2>Productos</h2></header>
+                            <img src="img/hobbiton-lake%20(1).jpg" alt="Paisaje2">
+                        </div>
+                    <article>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus purus ac auctor dictum. Nullam interdum eu tellus a efficitur. Sed a magna urna. Praesent sed faucibus quam. Pellentesque quis feugiat tellus. Vestibulum porta nulla id quam ultricies imperdiet. Sed maximus risus dui, vitae vehicula tellus commodo sed. Nulla vitae urna ac urna gravida iaculis at in nunc. Vivamus iaculis porttitor felis ac ultrices. Phasellus vitae arcu et velit semper sollicitudin.
+                        </p>
+                    <button type="button">Comprar</button>
+                    </article>
                 </section>
                 <section id="productos1" >
                     <div class="divProd">
-                        <h2>Productos</h2>
+                        <header><h2>Productos</h2></header>
                         <img src="img/hobbiton-lake%20(1).jpg" alt="Paisaje2">
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus purus ac auctor dictum. Nullam interdum eu tellus a efficitur. Sed a magna urna. Praesent sed faucibus quam. Pellentesque quis feugiat tellus. Vestibulum porta nulla id quam ultricies imperdiet. Sed maximus risus dui, vitae vehicula tellus commodo sed. Nulla vitae urna ac urna gravida iaculis at in nunc. Vivamus iaculis porttitor felis ac ultrices. Phasellus vitae arcu et velit semper sollicitudin.
+                    <article>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus purus ac auctor dictum. Nullam interdum eu tellus a efficitur. Sed a magna urna. Praesent sed faucibus quam. Pellentesque quis feugiat tellus. Vestibulum porta nulla id quam ultricies imperdiet. Sed maximus risus dui, vitae vehicula tellus commodo sed. Nulla vitae urna ac urna gravida iaculis at in nunc. Vivamus iaculis porttitor felis ac ultrices. Phasellus vitae arcu et velit semper sollicitudin.
+                        </p>
+                        <button type="button">Comprar</button>
+                    </article>
                 </section>
                 <section id="productos2" >
                     <div class="divProd">
-                        <h2>Productos</h2>
+                        <h2>Productos</h2></header>
                         <img src="img/hobbiton-lake%20(1).jpg" alt="Paisaje2">
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus purus ac auctor dictum. Nullam interdum eu tellus a efficitur. Sed a magna urna. Praesent sed faucibus quam. Pellentesque quis feugiat tellus. Vestibulum porta nulla id quam ultricies imperdiet. Sed maximus risus dui, vitae vehicula tellus commodo sed. Nulla vitae urna ac urna gravida iaculis at in nunc. Vivamus iaculis porttitor felis ac ultrices. Phasellus vitae arcu et velit semper sollicitudin.
+                    <article>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus purus ac auctor dictum. Nullam interdum eu tellus a efficitur. Sed a magna urna. Praesent sed faucibus quam. Pellentesque quis feugiat tellus. Vestibulum porta nulla id quam ultricies imperdiet. Sed maximus risus dui, vitae vehicula tellus commodo sed. Nulla vitae urna ac urna gravida iaculis at in nunc. Vivamus iaculis porttitor felis ac ultrices. Phasellus vitae arcu et velit semper sollicitudin.
+                        </p>
+                        <button type="button">Comprar</button>
+                    </article>
                 </section>
                 <section id="productos3" >
                     <div class="divProd">
-                        <h2>Productos</h2>
+                        <header><h2>Productos</h2></header>
                         <img src="img/hobbiton-lake%20(1).jpg" alt="Paisaje2">
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus purus ac auctor dictum. Nullam interdum eu tellus a efficitur. Sed a magna urna. Praesent sed faucibus quam. Pellentesque quis feugiat tellus. Vestibulum porta nulla id quam ultricies imperdiet. Sed maximus risus dui, vitae vehicula tellus commodo sed. Nulla vitae urna ac urna gravida iaculis at in nunc. Vivamus iaculis porttitor felis ac ultrices. Phasellus vitae arcu et velit semper sollicitudin.
+                    <article>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus purus ac auctor dictum. Nullam interdum eu tellus a efficitur. Sed a magna urna. Praesent sed faucibus quam. Pellentesque quis feugiat tellus. Vestibulum porta nulla id quam ultricies imperdiet. Sed maximus risus dui, vitae vehicula tellus commodo sed. Nulla vitae urna ac urna gravida iaculis at in nunc. Vivamus iaculis porttitor felis ac ultrices. Phasellus vitae arcu et velit semper sollicitudin.
+                        </p>
+                        <button type="button">Comprar</button>
+                    </article>
                 </section>
             </div>
             <section id="acercade">
                 <div class="mainDiv">
-                    <h2>Acerca de</h2>
+                    <header><h2>Acerca de</h2></header>
                     <img src="img/paisajes-bonitos-de-otoño-lago.jpg" alt="Paisaje3">
                 </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus purus ac auctor dictum. Nullam interdum eu tellus a efficitur. Sed a magna urna. Praesent sed faucibus quam. Pellentesque quis feugiat tellus. Vestibulum porta nulla id quam ultricies imperdiet. Sed maximus risus dui, vitae vehicula tellus commodo sed. Nulla vitae urna ac urna gravida iaculis at in nunc. Vivamus iaculis porttitor felis ac ultrices. Phasellus vitae arcu et velit semper sollicitudin.
@@ -111,7 +135,7 @@
             </section>
             <section id="localizacion">
                 <div class="mainDiv">
-                    <h2>Localizacion</h2>
+                    <header><h2>Localizacion</h2></header>
                     <img src="img/paisajes-bonitos-de-otoño-lago.jpg" alt="Paisaje4">
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus purus ac auctor dictum. Nullam interdum eu tellus a efficitur. Sed a magna urna. Praesent sed faucibus quam. Pellentesque quis feugiat tellus. Vestibulum porta nulla id quam ultricies imperdiet. Sed maximus risus dui, vitae vehicula tellus commodo sed. Nulla vitae urna ac urna gravida iaculis at in nunc. Vivamus iaculis porttitor felis ac ultrices. Phasellus vitae arcu et velit semper sollicitudin.
@@ -120,7 +144,7 @@
             </section>
             <section id="contacto">
                 <div class="mainDiv">
-                    <h2>Contacto</h2>
+                    <header><h2>Contacto</h2></header>
                     <img src="img/paisajes-bonitos-de-otoño-lago.jpg" alt="Paisaje5">
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus purus ac auctor dictum. Nullam interdum eu tellus a efficitur. Sed a magna urna. Praesent sed faucibus quam. Pellentesque quis feugiat tellus. Vestibulum porta nulla id quam ultricies imperdiet. Sed maximus risus dui, vitae vehicula tellus commodo sed. Nulla vitae urna ac urna gravida iaculis at in nunc. Vivamus iaculis porttitor felis ac ultrices. Phasellus vitae arcu et velit semper sollicitudin.
