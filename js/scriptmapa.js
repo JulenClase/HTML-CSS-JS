@@ -90,3 +90,11 @@ jQuery(document).ready(function($) {
         }
     }
 });
+/*
+ https://developers.google.com/maps/documentation/javascript/maptypes?hl=ES
+
+ https://developers.google.com/maps/documentation/javascript/examples/directions-panel?hl=es
+
+ https://developers.google.com/maps/documentation/javascript/geocoding?hl=es
+ */
+//https://developers.google.com/chart/interactive/docs/gallery/ganttchart
